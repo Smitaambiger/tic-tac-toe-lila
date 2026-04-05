@@ -1,0 +1,26 @@
+name: nakama
+
+logger:
+  level: "INFO"
+
+session:
+  encryption_key: "defaultencryptionkey"
+  token_expiry_sec: 7200
+  refresh_token_expiry_sec: 3600
+
+socket:
+  server_key: "defaultkey"
+  port: 7350
+  max_message_size_bytes: 4096
+  max_request_size_bytes: 131072
+  ping_period_ms: 10000
+  pong_wait_ms: 25000
+
+runtime:
+  js_entrypoint: "main.js"
+  path: "/nakama/data/modules"
+
+console:
+  port: 7351
+  username: "admin"
+  password: "password"
